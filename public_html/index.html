@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="registration.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Registration Form</h2>
+             
+		<form role="form">
+                    <p id="errorBox" style="color: red;font-family: serif"></p>
+			<div class="form-group">
+				<label for="fname">First Name:</label> <input type="text"
+                                                                              class="form-control" id="fname" name="firstName" placeholder="Enter First Name">
+				<label for="lname">Last Name:</label> <input type="text"
+					class="form-control" id="lname" name="lastName"placeholder="Enter Last Name">
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label> <input type="email"
+					class="form-control" id="email" name="email" placeholder="Enter email">
+			</div>
+			<div class="dropdown">
+				Year Of Birth <select class="form-control dropdown-toggle"
+					data-toggle="dropdown">
+					<option value="1977">1977</option>
+					<option value="1978">1978</option>
+					<option value="1979">1979</option>
+					<option value="1980">1980</option>
+					<option value="1981">1981</option>
+					<option value="1982">1982</option>
+					<option value="1983">1983</option>
+					<option value="1984">1984</option>
+					<option value="1985">1985</option>
+					<option value="1986">1986</option>
+				</select>
+			</div>
+			<h3>Sex</h3>
+			<div class="radio">
+				<label><input type="radio" name="female">Female</label> <label><input
+					type="radio" name="male">Male</label>
+			</div>
+                       <button type="button" class="btn btn-primary" onclick="Submit()">Submit</button>
+		</form>
+	</div>
+
+</body>
+</html>
